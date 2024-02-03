@@ -32,7 +32,7 @@ module Erogamescape
   def self.post_sql(sql)
     uri = URI.parse("https://erogamescape.dyndns.org/~ap2/ero/toukei_kaiseki/sql_for_erogamer_form.php")
     body = URI.encode_www_form({ "sql" => sql })
-    response = Net::HTTP.post(uri, body, { "Content-Type": "application/x-www-form-urlencoded" })
+    response = Net::HTTP.post(uri, body, { "Content-Type" => "application/x-www-form-urlencoded" })
     response.value
 
     response.body
