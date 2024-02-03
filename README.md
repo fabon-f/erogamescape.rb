@@ -18,7 +18,16 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO
+```ruby
+result = Erogamescape.query(<<SQL)
+SELECT id, brandname, median
+  FROM brandlist
+  WHERE id = 1
+SQL
+
+result.size # 1
+result.first # { "id" => "1", "brandname" => "âge(age)", "median" => "81" }
+```
 
 ## Development
 
