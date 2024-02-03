@@ -9,5 +9,6 @@ Thumbs.db
 /pkg/
 /spec/reports/
 /tmp/
+/Gemfile.lock
 
 sig-test/generated.rbs
