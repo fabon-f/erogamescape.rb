@@ -34,8 +34,7 @@ module Erogamescape
     body = URI.encode_www_form({ "sql" => sql })
     response = Net::HTTP.post(uri, body, { "Content-Type" => "application/x-www-form-urlencoded" })
     response.value
-
-    response.body
+    response.body.force_encoding("UTF-8")
   end
 
   def self.query(sql)
