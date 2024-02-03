@@ -24,5 +24,10 @@ class TestErogamescape < Minitest::Test
 
     result = ::Erogamescape.query("SELECT id, gamename FROM gamelist WHERE id = 28762")
     assert_equal([{ "id" => "28762", "gamename" => "さくらの雲＊スカアレットの恋" }], result)
+
+    sleep 3
+
+    result = ::Erogamescape.query("SELECT * FROM brandlist WHERE id > 100000")
+    assert_equal([], result)
   end
 end

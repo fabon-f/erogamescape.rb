@@ -19,6 +19,9 @@ module Erogamescape
 
     if doc.at_css("#query_result_main table").nil?
       text = doc.at_css("#query_result_main")&.text
+      if text == ""
+        return []
+      end
       raise RuntimeSqlError.new(text)
     end
 
