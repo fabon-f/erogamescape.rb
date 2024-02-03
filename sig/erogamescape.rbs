@@ -1,4 +1,13 @@
 module Erogamescape
   VERSION: String
-  # See the writing guide of rbs: https://github.com/ruby/rbs#guides
+  class SqlError < StandardError
+  end
+  class WrongSqlError < StandardError
+  end
+  class RuntimeSqlError < StandardError
+  end
+
+  def self.parse_response_html: (String html) -> Array[Hash[String, String]]
+  def self.post_sql: (String sql) -> String
+  def self.query: (String sql) -> Array[Hash[String, String]]
 end
