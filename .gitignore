@@ -9,3 +9,5 @@ Thumbs.db
 /pkg/
 /spec/reports/
 /tmp/
+
+sig-test/generated.rbs
