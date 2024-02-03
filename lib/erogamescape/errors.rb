@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 module Erogamescape
   class SqlError < StandardError
   end
