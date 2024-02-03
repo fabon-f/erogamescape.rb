@@ -13,7 +13,7 @@ module Erogamescape
     title = doc.at_css("#query_result_header h3")&.text
     if doc.at_css("#queryplan_main").nil?
       text = doc.at_css("#query_result_main")&.text
-      raise WrongSqlError.new(text) if title == 'エラー(SQL間違い)'
+      raise WrongSqlError.new(text) if title == "エラー(SQL間違い)"
       raise SqlError.new(text)
     end
 
