@@ -7,7 +7,7 @@ module Erogamescape
   class RuntimeSqlError < StandardError
   end
 
-  def self.parse_response_html: (String html) -> Array[Hash[String, String]]
-  def self.post_sql: (String sql) -> String
+  private def self.parse_response_html: (String html) -> Array[Hash[String, String]]
+  private def self.post_sql: (String sql) -> String
   def self.query: (String sql) -> Array[Hash[String, String]]
 end

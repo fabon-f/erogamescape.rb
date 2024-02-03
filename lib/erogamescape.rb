@@ -37,6 +37,8 @@ module Erogamescape
     response.body.force_encoding("UTF-8")
   end
 
+  private_class_method :parse_response_html, :post_sql
+
   def self.query(sql)
     self.parse_response_html(self.post_sql(sql))
   end
