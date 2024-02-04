@@ -23,6 +23,21 @@ result.size # 1
 result.first # { "id" => "1", "brandname" => "âge(age)", "median" => "81" }
 ```
 
+### RBS file
+
+RBS file (type definition) for this gem is bundled by default.
+
+If you are using Steep, add `library "erogamescape"` to your `Steepfile`. No other setup is required.
+
+```ruby
+# Steepfile (example)
+target :lib do
+  signature "sig"
+  check "lib"
+  library "erogamescape" # add this line!
+end
+```
+
 ## Development
 
 Run `bin/setup` to set up the project.
