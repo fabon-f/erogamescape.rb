@@ -10,5 +10,6 @@ Thumbs.db
 /spec/reports/
 /tmp/
 /Gemfile.lock
+/.gem_rbs_collection
 
 sig-test/generated.rbs
