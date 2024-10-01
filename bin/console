@@ -8,4 +8,5 @@ require "erogamescape"
 # with your gem easier. You can also use a different console, if you like.
 
 require "irb"
+ENV['IRB_COMPLETOR'] = 'type'
 IRB.start(__FILE__)
